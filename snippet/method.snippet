@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>method</Title>
+      <Shortcut>met</Shortcut>
+      <Description>Code snippet for creating a new method</Description>
+      <Author>Albert</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>return</ID>
+          <Default>void</Default>
+          <ToolTip>Return</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>name</ID>
+          <Default>Name</Default>
+          <ToolTip>Name</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>param</ID>
+          <Default></Default>
+          <ToolTip>Param</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[
+        /// <summary>
+        /// 
+        /// </summary>
+        public $return$ $name$($param$){
+              return new $return$;
+        }
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

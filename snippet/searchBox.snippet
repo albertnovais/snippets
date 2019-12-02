@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>SearchBoxPagingItem</Title>
+      <Shortcut>sbpgi</Shortcut>
+      <Description>Code snippet for creating a new SearchBox</Description>
+      <Author>Albert</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+      <Literal>
+          <ID>name</ID>
+          <Default>NameOfInput</Default>
+          <ToolTip>NameOfInput</ToolTip>
+      </Literal>
+      <Literal>
+          <ID>action</ID>
+          <Default>ActionName</Default>
+          <ToolTip>Url action</ToolTip>
+      </Literal>
+      <Literal>
+          <ID>requiredNames</ID>
+          <Default></Default>
+          <ToolTip>requiredNames</ToolTip>
+      </Literal>
+      <Literal>
+          <ID>valueField</ID>
+          <Default>Identity</Default>
+          <ToolTip>valueField</ToolTip>
+      </Literal>
+      <Literal>
+          <ID>textField</ID>
+          <Default>Name</Default>
+          <ToolTip>textField</ToolTip>
+      </Literal>
+      </Declarations>
+      <Code Language="csharp">
+    <![CDATA[
+    @SearchBox.SearchBoxPagingItem(name: "$name$",
+                                                    url: Url.Action("$action$"),
+                                                    requiredNames: "$requiredNames$",
+                                                    valueField: "$valueField$",
+                                                    textField: "$textField$")
+     ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
